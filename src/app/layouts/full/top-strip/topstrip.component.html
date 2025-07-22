@@ -1,11 +1,17 @@
+<!--
+  Top information strip displayed above the main toolbar.
+  It uses a dark background to highlight the quick links and actions.
+-->
 <div class="app-topstrip bg-dark text-white p-y-16 p-x-24 w-100 d-flex align-items-center justify-content-between">
+    <!-- Left section: brand logo and helpful links -->
     <div class="d-none d-sm-flex align-items-center justify-content-center gap-20">
         <a class="d-flex align-items-center" href="https://www.wrappixel.com/" target="_blank">
             <img src="/assets/images/logos/logo-wrappixel.svg" alt="" width="147">
         </a>
 
+        <!-- Navigation links -->
         <div class="linkbar d-none d-lg-flex align-items-center justify-content-center gap-16">
-            <!-- Templates -->
+            <!-- Templates link: opens the collection of Angular templates -->
             <a mat-button class="link-hover p-x-0 text-white d-flex"
                 href="https://www.wrappixel.com/templates/category/angular-templates/" target="_blank">
                 <div class="d-flex align-items-center gap-8 f-s-16 f-w-400">
@@ -14,7 +20,7 @@
                 </div>
             </a>
 
-            <!-- Support -->
+            <!-- Help link: directs users to the support portal -->
             <a mat-button class="link-hover p-x-0 text-white d-flex" href="https://support.wrappixel.com/"
                 target="_blank">
                 <div class="d-flex align-items-center gap-8 f-s-16 f-w-400">
@@ -23,7 +29,7 @@
                 </div>
             </a>
 
-            <!-- Hire Us -->
+            <!-- Hire Us link: custom development services -->
             <a mat-button class="link-hover p-x-0 text-white d-flex" href="https://www.wrappixel.com/hire-us/"
                 target="_blank">
                 <div class="d-flex align-items-center gap-8 f-s-16 f-w-400">
@@ -34,13 +40,14 @@
         </div>
     </div>
 
+    <!-- Right section: marketing call to action and purchase links -->
     <div class="topstrip-right d-flex align-items-center justify-content-center gap-16">
         <h6 class="text-linear-gradient f-s-14 text-uppercase text-lg-left text-center">Checkout Pro Version</h6>
 
         <div class="topstrip-right-inner d-flex justify-content-center align-items-center gap-10">
 
             <div class="d-flex justify-content-center align-items-center gap-10">
-                <!-- Live Preview -->
+                <!-- Live Preview button: shows preview options for each framework -->
                 <button class="live-preview-drop d-flex align-items-center gap-4 text-white f-s-16 p-x-16" mat-button
                     [matMenuTriggerFor]="beforeMenu">
                     <div class="d-flex align-items-center gap-6">
@@ -99,7 +106,7 @@
                     </a>
                 </mat-menu>
 
-                <!-- Get Pro -->
+                <!-- Get Pro button: purchase the MaterialM template -->
                 <a mat-button class="get-pro-btn text-white p-x-16"
                     href="https://www.wrappixel.com/templates/materialm-material-angular-dashboard-template/?ref=376" target="_blank">
                     <div class="d-flex align-items-center gap-8 f-s-16 f-w-400">
@@ -109,7 +116,7 @@
                 </a>
             </div>
 
-            <!-- Get Pro -->
+            <!-- All Access Pass button (green): bundle deal for all templates -->
             <a mat-button class="all-access-pass-btn text-dark p-x-16"
                 href="https://www.wrappixel.com/all-access-pass/?ref=376" target="_blank">
                 <div class="d-flex align-items-center gap-8 f-s-16 f-w-400">

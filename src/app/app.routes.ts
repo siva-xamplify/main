@@ -9,8 +9,10 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/dashboard',
-        pathMatch: 'full',
+        loadChildren: () =>
+          import('./public/public-routing.module').then(
+            (m) => m.PublicRoutingModule
+          ),
       },
       {
         path: 'dashboard',

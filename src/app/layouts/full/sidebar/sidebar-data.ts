@@ -229,6 +229,9 @@ export const navItems: NavItem[] = [
     displayName: 'AI Tools',
     iconName: 'solar:robot-line-duotone',
     route: '#',
+    chip: true,
+    chipContent: 'NEW',
+    chipClass: 'bg-light-secondary text-secondary',
     children: [
       {
         displayName: 'Brand Summary Generator',

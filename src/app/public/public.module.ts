@@ -11,10 +11,6 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     CommonModule,
     RouterModule,
-    PublicRoutingModule,
-    HomeComponent,
-    HeaderComponent,
-    FooterComponent,
-  ],
-})
+    PublicRoutingModule
+  ]})
 export class PublicModule {}

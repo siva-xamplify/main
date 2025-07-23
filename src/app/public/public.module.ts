@@ -8,8 +8,13 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent],
-  imports: [CommonModule, RouterModule, PublicRoutingModule],
-  exports: [HomeComponent, HeaderComponent, FooterComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    PublicRoutingModule,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
 })
 export class PublicModule {}
